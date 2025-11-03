@@ -342,27 +342,62 @@ function load(){
 }
 
 // EN songs
+const en_XXXX_m_icon = [
+	'pop'
+];
 
+const EN_XXXX_M_PACK_1 = 1;
 
+let en_XXXX_m = [
+		{
+			pack : EN_XXXX_M_PACK_1,
+			group : 'Herbie Hancock',
+			song : 'Rockit (1983)'
+		},
+		{
+			pack : EN_XXXX_M_PACK_1,
+			group : 'Ennio Morricone',
+			song : "Cockeye's Song (From “Once Upon A Time In The West”) (1984)"
+		},
+		{
+			pack : EN_XXXX_M_PACK_1,
+			group : 'Ennio Morricone',
+			song : 'Le marginal (Conclusion) (1983)'
+		},
+		{
+			pack : EN_XXXX_M_PACK_1,
+			group : 'Vangelis',
+			song : 'Ask the Mountains (1995)'
+		},
+		{
+			pack : EN_XXXX_M_PACK_1,
+			group : 'Vangelis',
+			song : 'Blade Runner Blues (1994)'
+		},
+		{
+			pack : EN_XXXX_M_PACK_1,
+			group : 'Vangelis',
+			song : "Rachel's Song (1999)"
+		},
+		{
+			pack : EN_XXXX_M_PACK_1,
+			group : 'John Williams',
+			song : 'Imperial March (1980)'
+		}
+];
+
+let en_XXXX_m_1 =	en_XXXX_m.filter(item => item.pack == 1);
 
 let music = [
 	{
-		arr: en_2000_m,
+		arr: en_XXXX_m,
 		lang: 'en',
-		year: '2000',
+		year: 'XXXX',
 		type: 'm',
 		packs: [
 				{
-					arr: en_2000_m_1,
-					name: 'EN 2000s Male: Pop',
-				},
-				{
-					arr: en_2000_m_2,
-					name: 'EN 2000s Male: Dj',
-				},
-				{
-					arr: en_2000_m_3,
-					name: 'EN 2000s Male: Rap',
+					arr: en_XXXX_m_1,
+					name: 'EN XXXXs Male: Musicians'
 				}
 			]
 	}
@@ -690,21 +725,21 @@ let generateImgPath;
 
 function setup(){
 	lang = 'en';
-	year = '2000';
+	year = 'XXXX';
 	artist_type = 'm';
 	back = back_to_packages;
 	modeToggle = toggleArtist;
 	setMedia = setAudio;
 	rightAnswer = rightAnswer_RU;
 	count_time();
-	package_names = en_2000_gr_icon;
+	package_names = en_XXXX_m_icon;
 	show_packages(package_names.length);
 	document.body.scrollTop = document.documentElement.scrollTop = 0;
 	useUrlParam();
 }
 
 let pack_num;
-let year_url = 'https://sunquiz.netlify.app/2020';
+let year_url = 'https://sunquiz.netlify.app';
 
 function useUrlParam() {
 	var url_string = window.location.href; 
