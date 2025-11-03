@@ -362,7 +362,8 @@ let en_XXXX_m = [
 		{
 			pack : EN_XXXX_M_PACK_1,
 			group : 'Ennio Morricone',
-			song : 'Le marginal (Conclusion) (1983)'
+			song : 'Le marginal (Conclusion) (1983)',
+			ignore : true
 		},
 		{
 			pack : EN_XXXX_M_PACK_1,
@@ -372,12 +373,14 @@ let en_XXXX_m = [
 		{
 			pack : EN_XXXX_M_PACK_1,
 			group : 'Vangelis',
-			song : 'Blade Runner Blues (1994)'
+			song : 'Blade Runner Blues (1994)',
+			ignore : true
 		},
 		{
 			pack : EN_XXXX_M_PACK_1,
 			group : 'Vangelis',
-			song : "Rachel's Song (1999)"
+			song : "Rachel's Song (1999)",
+			ignore : true
 		},
 		{
 			pack : EN_XXXX_M_PACK_1,
